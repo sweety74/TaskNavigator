@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPECIFIC TASK</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <section>
+      <div class="container">
+        <form class="single-task-form" >
+          <h4>Edit Task</h4>
+          <div class="form-control" method="PATCH"> 
+            <label class="label">Task ID</label>
+            <div class="task-edit-id"></div>
+          </div>
+          <div class="form-control">
+            <label class="label" for="name">Name</label>
+            <input type="text" name="name" class="task-edit-name" />
+          </div>
+          <div class="form-control">
+            <label class="label" for="completed">Completed</label>
+            <input type="checkbox" name="completed" class="task-edit-completed" />
+          </div>
+          <button class="btn">EDIT</button>
+          <div class="form-alert"></div>
+        </form>
+        <a href="index.html" class="back-btn back-link">back to tasks</a>
+      </div>
+  </section>
+  <script src="./edit-task.js"></script>
+</body>
+</html>
